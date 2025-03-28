@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/acbf0abc8b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="student_info.css">
+    <title>Student Information</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
+    <script src="formHandler.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-cont">
+            <h1 class="header-text">Student Entry Form</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-items">
+                <li style="background-color: rgb(135, 190, 252);"><a id="studentForm">Student Information</a></li>
+                <li><a>Parent Information</a></li>
+                <li><a>School Information</a></li>
+                <li><a>Summary</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="sec-container">
+        <div class="form-container">
+            <form action="" class="student-form">
+                <label for="ID">ID:</label>
+                <input type="text" id="ID" name="ID" placeholder="Enter your ID" required>
+
+                <label for="LastName">Last Name:</label>
+                <input type="text" id="LastName" name="LastName" placeholder="Enter your Last Name" required>
+
+                <label for="FirstName">First Name:</label>
+                <input type="text" id="FirstName" name="FirstName" placeholder="Enter your First Name" required>
+
+                <label for="MiddleName">Middle Name:</label>
+                <input type="text" id="MiddleName" name="MiddleName" placeholder="Enter your Middle Name" required>
+
+                <label for="student-gender">Gender:</label>
+                <select name="gender" id="student-gender" required>
+                    <option value="" disabled selected>Select your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <label for="student-Religion">Religion:</label>
+                <input type="text" id="student-Religion" name="student-Religion" placeholder="Enter your Religion" required>
+
+                <label for="student-bday">Birth Date:</label>
+                <input type="date" id="student-bday" name="student-bday" required>
+            </form>
+        </div>
+
+        <div class="form-container2">
+            <form action="" class="student-form2">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your Age" required>
+
+                <label for="citizenship">Citizenship:</label>
+                <input type="text" id="citizenship" name="citizenship" placeholder="Enter your Nationality" required>
+
+                <label for="status">Status:</label>
+                <select name="status" id="status" required>
+                    <option value="" disabled selected>Select your Status</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="widowed">Widowed</option>
+                    <option value="divorced">Divorced</option>
+                </select>
+
+                <label for="bloodtype">Blood Type:</label>
+                <select name="bloodtype" id="bloodtype" required>
+                    <option value="" disabled selected>Select your Blood Type</option>
+                    <option value="a+">A+</option>
+                    <option value="a-">A-</option>
+                    <option value="b+">B+</option>
+                    <option value="b-">B-</option>
+                    <option value="ab+">AB+</option>
+                    <option value="ab-">AB-</option>
+                    <option value="o+">O+</option>
+                    <option value="o-">O-</option>
+                    <option value="unknown">I don't know</option>
+                </select>
+
+                <label for="place-birth">Place of Birth:</label>
+                <input type="text" id="place-birth" name="place-birth" placeholder="Enter your Place of Birth" required>
+
+                <label for="student-contact">Contact:</label>
+                <input type="tel" id="student-contact" name="student-contact" placeholder="Contact Number" required>
+
+                <label for="student-address">Address:</label>
+                <input type="text" id="student-address" name="student-address" placeholder="Enter your address" required>
+            </form>
+        </div>
+    </section>
+
+    <div class="button-cont">
+            <button id="cancelButton">Cancel</button>
+            <button id="nextButton">Next</button>
+    </div>
+</body>
+</html>

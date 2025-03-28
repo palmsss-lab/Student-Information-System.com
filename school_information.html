@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/acbf0abc8b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="school_info.css">
+    <title>School Information</title>
+    <script src="formHandler.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-cont">
+            <h1 class="header-text">Student Entry Form</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-items">
+                <li><a>Student Information</a></li>
+                <li><a>Parent Information</a></li>
+                <li style="background-color: rgb(135, 190, 252);">
+                    <a id="schoolForm">School Information</a>
+                </li>
+                <li><a>Summary</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="sec-container">
+
+        <!-- Current School Details Form -->
+        <div class="form-container">
+            <form action="" class="school-form">
+                <legend class="school">Current School Details:</legend>
+
+                <label for="schoolName">School Name:</label>
+                <input type="text" id="schoolName" name="schoolName" placeholder="Enter school name" required>
+
+                <label for="schoolAddress">School Address:</label>
+                <input type="text" id="schoolAddress" name="schoolAddress" placeholder="Enter School Address" required>
+
+                <label for="schoolContact">School Contact Number:</label>
+                <input type="text" id="schoolContact" name="schoolContact" placeholder="Contact Number" required>
+
+                <label for="schoolEmail">School Email Address:</label>
+                <input type="email" id="schoolEmail" name="schoolEmail" placeholder="Email address" required>
+            </form>
+        </div>
+
+        <!-- Student's Academic Information Form -->
+        <div class="form-container2">
+            <form action="" class="school-form2">
+                <legend class="student">Student's Academic Information:</legend>
+
+                <label for="gradeLevel">Grade Level:</label>
+                <select name="gradeLevel" id="gradeLevel" required>
+                    <option value="" disabled selected>Select Grade Level</option>
+                    <option value="Grade7">Grade 7</option>
+                    <option value="Grade8">Grade 8</option>
+                    <option value="Grade9">Grade 9</option>
+                    <option value="Grade10">Grade 10</option>
+                    <option value="Grade11">Grade 11</option>
+                    <option value="Grade12">Grade 12</option>
+                </select>
+
+                <label for="adviserName">Adviser's Name:</label>
+                <input type="text" id="adviserName" name="adviserName" placeholder="Enter adviser's name" required>
+
+            </form>
+        </div>
+
+    </section>
+
+    <div class="button-container">
+            <button id="backButton">Back</button>
+            <button id="nextbutton">Next</button>
+    </div>
+
+</body>
+
+</html>

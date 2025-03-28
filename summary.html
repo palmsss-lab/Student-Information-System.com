@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="summary.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="formHandler.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Student Entry Form - Summary</h1>
+    </header>
+
+    <nav>
+        <a>Student Information</a>
+        <a>Parent Information</a>
+        <a>School Information</a>
+        <a href="summary.html" style="background-color: rgb(135, 190, 252);">Summary</a>
+    </nav>
+
+    <section id="summary-container">
+        <h2>Submission Successful</h2>
+        <p>Here is a summary of your submitted information:</p>
+
+        <div id="summary-output">
+            <!-- Data will be displayed here -->
+        </div>
+
+        <!-- Email Form -->
+        <form id="emailForm">
+            <label for="userEmail">Enter your email:</label>
+            <input type="email" id="userEmail" name="userEmail" placeholder="example@email.com" required>
+            <button type="submit">Send to Email</button>
+        </form>
+
+        <!-- Exit Button -->
+        <button id="exitButton">Exit</button>
+
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            emailjs.init("mL6kXKm1KWDJJPeCy"); // Replace with your EmailJS public key
+
+            // Exit button functionality
+            const exitButton = document.getElementById("exitButton");
+            exitButton.addEventListener("click", () => {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/acbf0abc8b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="parent_form.css">
+    <title>Parent Information</title>
+    <script src="formHandler.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-cont">
+            <h1 class="header-text">
+                Student Entry Form
+            </h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-items">
+                <li><a>Student Information</a></li>
+                <li style="background-color: rgb(135, 190, 252);">
+                    <a id="parentForm">Parent Information</a>
+                </li>
+                <li><a>School Information</a></li>
+                <li><a>Summary</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="sec-container">
+        <div class="form-container">
+            <form action="" class="parent-form">
+
+                <label for="guardianName">Parent/Guardian Name:</label>
+                <input type="text" id="guardianName" name="guardianName" placeholder="Fullname" required>
+
+                <label for="relationToStudent">Relationship to Student:</label>
+                <select name="relationToStudent" id="relationToStudent" required>
+                    <option value="" disabled selected>Select Relationship</option>
+                    <option value="father">Father</option>
+                    <option value="mother">Mother</option>
+                    <option value="guardian">Guardian</option>
+                </select>
+
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" name="occupation" placeholder="Enter occupation" required>
+
+                <label for="homeAddress">Home Address:</label>
+                <input type="text" id="homeAddress" name="homeAddress" placeholder="Enter the address" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone number" required>
+
+            </form>
+        </div>
+
+        <div class="form-container2">
+            <form action="" class="parent-form2">
+
+                <label for="parentCitizenship">Citizenship:</label>
+                <input type="text" id="parentCitizenship" name="parentCitizenship" placeholder="Enter your Nationality" required>
+
+                <label for="educationBackground">Educational Background:</label>
+                <input type="text" id="educationBackground" name="educationBackground"
+                    placeholder="e.g., High School, Bachelor's Degree" required>
+
+                <label for="maritalStatus">Marital Status:</label>
+                <select name="maritalStatus" id="maritalStatus" required>
+                    <option value="" disabled selected>Select Status</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="widowed">Widowed</option>
+                    <option value="divorced">Divorced</option>
+                </select>
+
+            </form>
+        </div>
+    </section>
+
+    <div class="button-container">
+            <button id="backBtn">Back</button>
+            <button id="nextBtn">Next</button>
+    </div>
+
+</body>
+
+</html>
